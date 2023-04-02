@@ -1,0 +1,29 @@
+WHEN WORKING LOCALLY IN A VIRTUAL ENVIRONMENT
+
+    RUN EACH COMMAND
+    python3.10 -m venv myenv
+    source myenv/bin/activate
+    pip install -r requirements.txt
+    uvicorn main:app --host 0.0.0.0 --port 8080
+
+    GO TO: http://0.0.0.0:8080/
+
+    WAIT FOR LESS THAN 30 SECONDS
+    You will see the transcription on the homepage
+    And a new file in the project directory called '123456789.txt'
+    The app is done. It worked properly. 
+
+WHEN WORKING WITH DOCKER
+
+    RUN
+    docker build -t <image-name>:<version-name> .
+
+    RUN
+    docker run --name <container-name> -p 8080:8080 <image-name>:<version-tag>
+
+    GO TO: http://0.0.0.0:8080/
+
+    THE EXACT SAME CODE NOW TAKES 20-50 MINUTES TO FINISH
+    This is the problem I need you to fix
+    
+

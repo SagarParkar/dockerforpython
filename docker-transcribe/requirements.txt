@@ -1,0 +1,16 @@
+
+ffmpeg-python
+more-itertools 
+numba 
+numpy 
+torch 
+tqdm
+transformers
+git+https://github.com/openai/whisper.git
+
+uvicorn
+fastapi
+requests
+starlette
+jinja2
+python-multipart
